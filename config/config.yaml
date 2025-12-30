@@ -80,9 +80,10 @@ report:
   reverse_content_order: false # 内容顺序：false=热点词汇统计在前，true=新增热点新闻在前
 
 notification:
-  enable_notification: true # 是否启用通知功能
-  enable_email: true        # [新增] 开启邮件通知
-  enable_pushdeer: false    # [新增] 关闭之前的微信推送
+  enable_notification: true
+  enable_email: false        # [关闭] 邮箱
+  enable_wechat_robot: true  # [开启] 企业微信机器人
+  enable_pushdeer: false     # [保持关闭] 微信推送
   message_batch_size: 4000 
   dingtalk_batch_size: 20000 
   feishu_batch_size: 30000 
